@@ -2,8 +2,7 @@
   "buildCommand": "npm --prefix frontend ci && npm --prefix frontend run build",
   "outputDirectory": "frontend/dist",
   "functions": {
-    "api/index.py": {
-      "runtime": "python3.9",
+    "api/*.py": {
       "memory": 1024,
       "maxDuration": 10
     }
